@@ -48,8 +48,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <350>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            flavor = "balanced";
         };
 
         tildeDBtap: tildeDBtap {
@@ -81,10 +81,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE        &kp N1  &kp N2    &kp N3        &kp N4        &kp N5                                   &kp N6     &kp N7         &kp N8     &squarebracketDBtapL  &squarebracketDBtapR  &longPress LC(LS(LA(KP_MULTIPLY))) EQUAL
-&kp TAB           &kp Q   &kp W     &kp E         &kp R         &kp T      &kp Y                                    &kp U          &kp I      &kp O                 &kp P                 &longPress LC(LS(LA(KP_MINUS))) MINUS
-&kp LSHIFT        &kp A   &kp S     &kp D         &kp F         &kp G      &kp H                                    &kp J          &kp K      &kp L                 &kp SEMI              &tildeDBtap
-&kp LEFT_CONTROL  &kp Z   &kp X     &kp C         &kp V         &kp B      &kp C_MUTE  &kp C_PLAY_PAUSE  &kp N      &kp M          &kp COMMA  &kp DOT               &backslashDBtap       &kp RSHFT
+&kp ESCAPE        &kp N1  &kp N2    &kp N3        &kp N4        &kp N5                                   &kp N6     &kp N7         &kp N8     &longPress LEFT_BRACKET N9  &longPress RIGHT_BRACKET N0  &longPress LC(LS(LA(KP_MULTIPLY))) EQUAL
+&kp TAB           &kp Q   &kp W     &kp E         &kp R         &kp T      &kp Y                                    &kp U          &kp I      &kp O                       &kp P                        &longPress LC(LS(LA(KP_MINUS))) MINUS
+&kp LSHIFT        &kp A   &kp S     &kp D         &kp F         &kp G      &kp H                                    &kp J          &kp K      &kp L                       &kp SEMI                     &longPress GRAVE SINGLE_QUOTE
+&kp LEFT_CONTROL  &kp Z   &kp X     &kp C         &kp V         &kp B      &kp C_MUTE  &kp C_PLAY_PAUSE  &kp N      &kp M          &kp COMMA  &kp DOT                     &longPress BACKSLASH SLASH   &kp RSHFT
                           &kp HOME  &kp LEFT_WIN  &kp LEFT_ALT  &mo LOWER  &kp SPACE   &kp ENTER         &mo RAISE  &kp BACKSPACE  &kp RALT   &kp END
             >;
 
